@@ -7,5 +7,6 @@ CREATE TABLE IF NOT EXISTS public.products
     price              DECIMAL(10, 2) NOT NULL,
     quantity_available INT            NOT NULL,
     is_available       BOOLEAN   DEFAULT true, -- Indicates if the product is currently being sold
+    image_url          VARCHAR(255), -- Add this column to store the image URL
     created_at         TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
